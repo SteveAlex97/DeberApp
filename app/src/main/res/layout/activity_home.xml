@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".HomeActivity">
+
+
+    <EditText
+        android:id="@+id/etcedula"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="101dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese cedula"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombres"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="101dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcedula" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/edit"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombres">
+
+        <RadioButton
+            android:id="@+id/rbtnhombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/rbtnmujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mujer" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spPais"
+        android:layout_width="323dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/edit"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/etprovincia"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="92dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese Provincia"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spPais" />
+
+    <TextView
+        android:id="@+id/etcorreo"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingese Correo"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etprovincia" />
+
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/botones"
+        android:text="actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcorreo" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="128dp"
+        android:background="@drawable/botones"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualizar" />
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

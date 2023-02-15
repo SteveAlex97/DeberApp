@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Producto">
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese Codigo"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etnombreproducto"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="98dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese Nombre Producto"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etcodigo" />
+
+    <EditText
+        android:id="@+id/etstock"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="93dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese Stock"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombreproducto" />
+
+    <EditText
+        android:id="@+id/etprecosto"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="95dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:ems="10"
+        android:hint="Ingrese precio costo"
+        android:inputType="numberDecimal"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etstock" />
+
+    <EditText
+        android:id="@+id/etpreventa"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="89dp"
+        android:background="@drawable/edit"
+        android:drawablePadding="4dp"
+        android:elevation="6dp"
+        android:ems="10"
+        android:hint="Ingrese precio venta"
+        android:inputType="numberDecimal"
+        android:paddingStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etprecosto" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/botones"
+        android:text="guardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpreventa" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/botones"
+        android:text="actualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpreventa" />
+
+    <Button
+        android:id="@+id/btnbuscar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/botones"
+        android:text="buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar" />
+
+    <Button
+        android:id="@+id/btnborrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/botones"
+        android:text="borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactualizar" />
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="133dp"
+        android:background="@drawable/botones"
+        android:text="regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnactualizar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
